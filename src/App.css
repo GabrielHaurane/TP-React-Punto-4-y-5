@@ -1,0 +1,12 @@
+body {
+  background: rgb(113,28,139);
+background: linear-gradient(0deg, rgba(113,28,139,1) 0%, rgba(151,38,134,1) 50%, rgba(47,116,245,1) 100%);
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+flex-grow: 1;
+}
