@@ -20,6 +20,12 @@ setListaTareas([...listaTareas, tarea])
 setTarea('');
 
 }
+const borrarTarea = (nombreTarea)=>{
+// listaTareas.splice
+const tareasFiltradas = listaTareas.filter((item)=> item !== nombreTarea);
+// actualizar el state
+setListaTareas(tareasFiltradas)
+}
 
     return (
     <section>
@@ -37,7 +43,7 @@ setTarea('');
           </Button>
         </Form.Group>
       </Form>
-      <ListaTareas listaTareas={listaTareas}></ListaTareas>
+      <ListaTareas listaTareas={listaTareas} borrarTarea ={borrarTarea} ></ListaTareas>
     </section>
   );
 };
